@@ -8,7 +8,7 @@ function login() {
     $.ajax({
         type: "POST"
         , data: JSON.stringify(loginObj)
-        , url: "http://roilapi.azurewebsites.net/api/Login"
+        , url: "https://roilapi.azurewebsites.net/api/Login"
         , contentType: "application/json"
     }).done(function (res) {
         userProfile = JSON.parse(res)
